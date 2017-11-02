@@ -21,7 +21,11 @@
 
 @property (nonatomic) CameraSessionManager *sessionManager;
 @property (nonatomic) CIContext *ciContext;
+@property (nonatomic) NSDictionary *opts;
+@property (nonatomic) CIDetector *detector;
 @property (nonatomic) CIImage *latestFrame;
+@property (nonatomic) bool leftEyeClosed;
+@property (nonatomic) bool rightEyeClosed;
 @property (nonatomic) EAGLContext *context;
 @property (nonatomic) NSLock *renderLock;
 @property BOOL dragEnabled;
