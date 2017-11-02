@@ -694,4 +694,12 @@
       }
     }];
 }
+
+- (void) invokeBrightnessNotification:(int) stat {
+  NSLog(@"brightness %d", stat);
+}
+
+- (void) invokeEyesNotification:(int) stat {
+  NSLog(@"eyes %d", stat);
+}
 @end

@@ -11,6 +11,8 @@
 
 @protocol TakePictureDelegate
 - (void) invokeTakePicture;
+- (void) invokeBrightnessNotification:(int) stat;
+- (void) invokeEyesNotification:(int) stat;
 @end;
 
 @interface CameraRenderController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate> {
@@ -26,6 +28,9 @@
 @property (nonatomic) CIImage *latestFrame;
 @property (nonatomic) bool leftEyeClosed;
 @property (nonatomic) bool rightEyeClosed;
+@property (nonatomic) int brightnessStat;
+@property (nonatomic) int eyeStat;
+
 @property (nonatomic) EAGLContext *context;
 @property (nonatomic) NSLock *renderLock;
 @property BOOL dragEnabled;

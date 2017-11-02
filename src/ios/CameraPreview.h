@@ -39,6 +39,8 @@
 
 - (void) invokeTakePicture:(CGFloat) width withHeight:(CGFloat) height withQuality:(int) quality;
 - (void) invokeTakePicture;
+- (void) invokeBrightnessNotification:(int) stat;
+- (void) invokeEyesNotification:(int) stat;
 
 @property (nonatomic) CameraSessionManager *sessionManager;
 @property (nonatomic) CameraRenderController *cameraRenderController;
